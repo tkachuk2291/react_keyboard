@@ -4,7 +4,6 @@ export const App: React.FC = () => {
   const [key , setKey] = useState('')
   useEffect(() => {
     const handleAnyButton = (event: KeyboardEvent) => {
-      console.log(event.key);
       setKey(event.key)
     };
     document.addEventListener('keyup', handleAnyButton);
